@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444444;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* HEADER */
+.header {
+  background: #0a0a0a;
+  border-bottom: 2px solid #00c8c8;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.header .titulo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00c8c8;
+  letter-spacing: 0.5px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #f5c518;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.navbar li a:hover {
+  color: #00c8c8;
+}
+
+.navbar li.agora a {
+  color: #ffffff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.navbar li:not(:has(a)) {
+  color: #555;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  height: 360px;
+  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.banner .container {
+  color: #ffffff;
+}
+
+.banner p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.banner span {
+  font-weight: 700;
+}
+
+/* SOCIAL */
+.social {
+  background: #e8e8e8;
+  padding: 56px 0 60px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.box {
+  text-align: center;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.box img:not([src]),
+.box img[src=""] {
+  display: none;
+}
+
+.box img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.box h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.box:nth-child(1) h4 { color: #e0006e; }
+.box:nth-child(2) h4 { color: #f5c518; }
+.box:nth-child(3) h4 { color: #e0006e; }
+
+.box p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #444444;
+}
+
+/* FOOTER */
+.footer {
+  background: #00bcd4;
+  padding: 18px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer h4 {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer .version {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* LOGIN / CADASTRO — fundo compartilhado */
+.login {
+  width: 100%;
+  min-height: calc(100vh - 54px - 54px);
+  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* CARD BASE (login e cadastro) */
+.card-login,
+.card-cadastro {
+  background: #e8e8e8;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 560px;
+  padding: 36px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-login h2,
+.card-cadastro h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e0006e;
+}
+
+/* FORMULÁRIO */
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.campo span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #e0006e;
+}
+
+.campo input {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #444444;
+  background: #ffffff;
+  border: 1.5px solid #00c8c8;
+  border-radius: 4px;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo input:focus {
+  border-color: #e0006e;
+  box-shadow: 0 0 0 3px rgba(224, 0, 110, 0.12);
+}
+
+/* BOTÃO */
+.botao {
+  margin-top: 8px;
+  align-self: center;
+  padding: 10px 48px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #e0006e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.botao:hover {
+  background: #c4005f;
+}
+
+.botao:active {
+  transform: scale(0.97);
+}
