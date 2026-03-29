@@ -11,7 +11,7 @@ body {
   color: #444444;
 }
 
-/* CONTAINER */
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -19,7 +19,7 @@ body {
   padding: 0 40px;
 }
 
-/* HEADER */
+
 .header {
   background: #0a0a0a;
   border-bottom: 2px solid #00c8c8;
@@ -40,7 +40,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* NAVBAR */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ body {
   font-weight: 700;
 }
 
-/* SOCIAL */
+
 .social {
   background: #e8e8e8;
   padding: 56px 0 60px;
@@ -144,7 +144,6 @@ body {
   color: #444444;
 }
 
-/* FOOTER */
 .footer {
   background: #00bcd4;
   padding: 18px 0;
@@ -170,11 +169,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* LOGIN / CADASTRO — fundo compartilhado */
 .login {
   width: 100%;
   min-height: calc(100vh - 54px - 54px);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('../assets/imgs/bg-jelly-fish-para_outras_pags.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +187,6 @@ body {
   width: 100%;
 }
 
-/* CARD BASE (login e cadastro) */
 .card-login,
 .card-cadastro {
   background: #e8e8e8;
@@ -210,7 +207,6 @@ body {
   color: #e0006e;
 }
 
-/* FORMULÁRIO */
 .formulario {
   width: 100%;
   display: flex;
@@ -249,7 +245,6 @@ body {
   box-shadow: 0 0 0 3px rgba(224, 0, 110, 0.12);
 }
 
-/* BOTÃO */
 .botao {
   margin-top: 8px;
   align-self: center;
